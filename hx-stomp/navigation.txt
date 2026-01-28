@@ -1,0 +1,82 @@
+[globalsetup]
+# 0-100
+ledbright = [30]
+
+# 0-100
+screenbright = [80]
+
+# on / off
+midithrough = [off]
+
+# on / off
+# Selecting black or white fonts according to the wallpaper background
+dark_fonts = [off]
+
+# 123 / abc3 / abc4 / abc5 / abc8
+# Setting 123 is to display the PC as a numerical value
+# abc3 means PC display as 1A,1B,1C,2A... abc5 means 1A,1B,1C,1D,1E,2A...
+display_number_ABC = [abc3]
+
+# 0 / 1 
+# set to 1 so that the displayed PC number starting from 1 (PC value +1)
+# set to 0 so that the displayed PC number starting from 0 (actual PC value)
+display_pc_offset = [1]
+
+# 0 / 1 
+# set to 0 so that when abcX display selected above, start from 0A,0B,0C...
+# set to 1 so that when abcX display selected above, start from 1A,1B,1C...
+display_bank_offset = [1]
+
+# wp1 / wp2 / wp3
+wallpaper = [wp2]
+
+# 1 / 1.5 / 2 / 2.5
+# long press time in second
+long_press_timing = [1]
+
+
+[PAGE]
+# Change the "NAME" below in uppercase letters <= 4 characters
+page_name = [HNAV]
+
+# Switch 1 - Previous Preset
+[key0]
+keytimes = [1]
+ledmode = [normal]
+ledcolor1 = [0xffff00][0xffff00][0xffff00]
+short_dw1 = [1][CC][72][0]
+
+# Switch 2 - Next Preset
+[key1]
+keytimes = [1]
+ledmode = [normal]
+ledcolor1 = [0x00ffff][0x00ffff][0x00ffff]
+short_dw1 = [1][CC][72][127]
+
+# Switch 3 - Toggle Tuner
+[key2]
+keytimes = [1]
+ledmode = [normal]
+ledcolor1 = [0xff00ff][0x000000][0x000000]
+short_dw1 = [1][CC][68][127]   
+ 
+# Switch A - Snapshot 1
+[key3]
+keytimes = [1]
+ledmode = [normal]
+ledcolor1 = [0xff0000][0xff0000][0xff0000]
+short_dw1 = [1][CC][69][0]
+
+# Switch B - Snapshot 2
+[key4]
+keytimes = [1]
+ledmode = [normal]
+ledcolor1 = [0xff0ff0][0xff0ff0][0xff0ff0]
+short_dw1 = [1][CC][69][1]
+
+# Switch C - Snapshot 3
+[key5]
+keytimes = [1]
+ledmode = [normal]
+ledcolor1 = [0xff0ff0][0xff0ff0][0xff0ff0]
+short_dw1 = [1][CC][69][2]

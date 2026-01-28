@@ -1,0 +1,93 @@
+[globalsetup]
+# 0-100
+ledbright = [30]
+
+# 0-100
+screenbright = [80]
+
+# on / off
+midithrough = [off]
+
+# on / off
+# Selecting black or white fonts according to the wallpaper background
+dark_fonts = [off]
+
+# 123 / abc3 / abc4 / abc5 / abc8
+# Setting 123 is to display the PC as a numerical value
+# abc3 means PC display as 1A,1B,1C,2A... abc5 means 1A,1B,1C,1D,1E,2A...
+display_number_ABC = [abc3]
+
+# 0 / 1 
+# set to 1 so that the displayed PC number starting from 1 (PC value +1)
+# set to 0 so that the displayed PC number starting from 0 (actual PC value)
+display_pc_offset = [1]
+
+# 0 / 1 
+# set to 0 so that when abcX display selected above, start from 0A,0B,0C...
+# set to 1 so that when abcX display selected above, start from 1A,1B,1C...
+display_bank_offset = [1]
+
+# wp1 / wp2 / wp3
+wallpaper = [wp2]
+
+# 1 / 1.5 / 2 / 2.5
+# long press time in second
+long_press_timing = [1]
+
+
+[PAGE]
+# Change the "NAME" below in uppercase letters <= 4 characters
+page_name = [HLOO]
+
+# Switch 1 - Looper Stop / Play
+[key0]
+keytimes = [2]
+ledmode = [normal]
+ledcolor1 = [0xcc0000][0xcc0000][0xcc0000]
+ledcolor2 = [0x00cc00][0x00cc00][0x00cc00]
+short_dw1 = [1][CC][61][0]
+short_dw2 = [1][CC][61][127]
+
+
+# Switch 2 - Looper Reverse / Forward
+[key1]
+keytimes = [2]
+ledmode = [normal]
+ledcolor1 = [0xffc107][0xffc107][0xffc107]
+ledcolor2 = [0x007bff][0x007bff][0x007bff]
+short_dw1 = [1][CC][65][127]
+short_dw2 = [1][CC][65][0]
+
+# Switch 3 - Looper Half / Full Speed
+[key2]
+keytimes = [2]
+ledmode = [normal]
+ledcolor1 = [0xffc107][0xffc107][0xffc107]
+ledcolor2 = [0x007bff][0x007bff][0x007bff]
+short_dw1 = [1][CC][66][127]
+short_dw2 = [1][CC][66][0] 
+ 
+# Switch A - Looper Record / Play
+[key3]
+keytimes = [2]
+ledmode = [normal]
+ledcolor1 = [0xe60000][0xe60000][0xe60000]
+ledcolor2 = [0x00cc00][0x00cc00][0x00cc00]
+short_dw1 = [1][CC][60][127]
+short_dw2 = [1][CC][61][127]
+
+# Switch B - Looper Overdub / Play Block
+[key4]
+keytimes = [2]
+ledmode = [normal]
+ledcolor1 = [0xe60000][0xe60000][0xe60000]
+ledcolor2 = [0x00cc00][0x00cc00][0x00cc00]
+short_dw1 = [1][CC][60][0]
+short_dw2 = [1][CC][61][127]
+
+# Switch C - Toggle Tuner - Don't use but the controller requires key5
+[key5]
+keytimes = [1]
+ledmode = [normal]
+ledcolor1 = [0xe60000][0xe60000][0xe60000]
+short_dw1 = [1][CC][68][127]   
